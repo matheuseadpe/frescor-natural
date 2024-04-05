@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="autores" content="Matheus Barbosa, Enis Monique" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="src/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Frescor Natural</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar-content">
+        <div class="logo-content">
+          <img src="src/logo.svg" alt="logotipo" width="32px" />
+          <h3>Frescor Natural</h3>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#my-carrosel">Galeria</a></li>
+            <li><a href="#my-newspaper">Newspaper</a></li>
+            <li><a href="#contatos">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-page">
+        <div class="hero-content">
+          <h3>Bem-vindo ao Hortifruti</h3>
+          <h1 class="nome-negocio">Frescor Natural</h1>
+          <p>
+            Descubra a frescura e a qualidade dos produtos selecionados
+            especialmente para você. No Hortifruti Frescor Natural, estamos
+            comprometidos em oferecer os melhores alimentos frescos, diretamente
+            do campo para a sua mesa.
+          </p>
+        </div>
+
+        <div>
+          <img src="src/frutas.webp" alt="frutas" />
+        </div>
+      </section>
+
+      <section id="my-carrosel" class="carrosel-section">
+        <div class="carrosel">
+          <div class="slide">
+            <img src="src/frutas-1.avif" alt="frutas" />
+            <p>
+              De maçãs suculentas a abacaxis maduros, descubra uma variedade de
+              frutas frescas e deliciosas.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="src/vegetais.avif" alt="vegetais" />
+            <p>
+              Conheça nossos vegetais cultivados organicamente, colhidos com
+              cuidado para uma alimentação saudável e sustentável.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="src/horta.avif" alt="horta" />
+            <p>
+              Descubra uma variedade de hortaliças frescas e crocantes,
+              perfeitas para preparar refeições nutritivas e saborosas.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="src/sucos.avif" alt="sucos" />
+            <p>
+              Refresque-se com nossos sucos naturais feitos na hora, repletos de
+              vitaminas e sabores incríveis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="my-newspaper" class="newspaper-page">
+        <aside class="">
+            <div class='newspaper-title'>
+                <img src="src/logo.svg" alt="logotipo">
+                <h2>Assine nossa Newspaper!!</h2>
+                <p>
+                  Junte-se à nossa comunidade de leitores e mantenha-se atualizado com
+                  as últimas notícias e informações.
+                </p>
+            </div>
+          <form class="form-container" action="" method="post">
+            <div class="input-item">
+              <label for="nome">Nome Completo*</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="digite seu nome..."
+                required
+              />
+            </div>
+
+            <div class="input-item">
+              <label for="email">E-mail*</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="digite seu e-mail..."
+                required
+              />
+            </div>
+
+            <div class="input-item">
+              <label for="telefone">Telefone</label>
+              <input
+                type="text"
+                id="telefone"
+                placeholder="digite seu telefone"
+              />
+            </div>
+
+            <button type="submit">Cadastrar-se</button>
+          </form>
+        </aside>
+
+        <main id="contatos">
+            <div>
+                <h1>Contatos</h1>
+                <p>Estamos aqui para ajudar e ouvir suas dúvidas, comentários ou preocupações. Não hesite em nos contatar!</p>
+            </div>
+
+            <div class="sociais-buttons">
+                <div class="sociais-button-group">
+                    <div onclick="abrirLinkedin()" aria-describedby="Linkedin" class="sociais-button-element">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                    <div onclick="abrirInstagram" aria-describedby="Instagram" class="sociais-button-element">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="sociais-button-group">
+                    <div onclick="abrirGmail" aria-describedby="Gmail" class="sociais-button-element">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div onclick="enviarMensagem" aria-describedby="Telefone" class="sociais-button-element">
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+      </section>
+    </main>
+
+    <footer>
+      <span>Frescor Natural &copy; 2024</span>
+    </footer>
+  </body>
+
+  <script src="js/carrosel.js"></script>
+  <script src="js/linkedin.js"></script>
+  <script src="js/instagram.js"></script>
+  <!-- (...) -->
+</html>
