@@ -91,7 +91,7 @@
                   as últimas notícias e informações.
                 </p>
             </div>
-          <form class="form-container" action="" method="post">
+          <form id="form-newspaper" class="form-container" onsubmit="submitForm(event)" method="get">
             <div class="input-item">
               <label for="nome">Nome Completo*</label>
               <input
@@ -136,15 +136,15 @@
                     <div onclick="abrirLinkedin()" aria-describedby="Linkedin" class="sociais-button-element">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </div>
-                    <div onclick="abrirInstagram" aria-describedby="Instagram" class="sociais-button-element">
+                    <div onclick="abrirInstagram()" aria-describedby="Instagram" class="sociais-button-element">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="sociais-button-group">
-                    <div onclick="abrirGmail" aria-describedby="Gmail" class="sociais-button-element">
+                    <div onclick="abrirGmail()" aria-describedby="Gmail" class="sociais-button-element">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
-                    <div onclick="enviarMensagem" aria-describedby="Telefone" class="sociais-button-element">
+                    <div onclick="enviarMensagem()" aria-describedby="Telefone" class="sociais-button-element">
                         <i class="fa fa-commenting" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -161,5 +161,6 @@
   <script src="js/carrosel.js"></script>
   <script src="js/linkedin.js"></script>
   <script src="js/instagram.js"></script>
+  <script src="js/newspaper.js"></script>
   <!-- (...) -->
 </html>
