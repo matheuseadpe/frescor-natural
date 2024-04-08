@@ -1,10 +1,10 @@
-function submitForm(values){
-    console.log(values)
-    const data = {
-        nome:values.nome,
-        email:values.email,
-        telefone:values.telefone
-    }
+function submitForm(event){
+    console.log(`SubmitForm... ${event}`)
 
-    console.log(...data)
+    const formulario = document.getElementById('form-newspaper')
+    const data = new FormData(formulario)
+
+    data.forEach((value, key) => {
+        console.log(`${key} = ${value}`)
+    })
 }
